@@ -1,0 +1,47 @@
+html,
+body,
+main {
+    height: 100%;
+}
+
+body {
+    background-color: darksalmon;
+}
+
+main {
+    max-width: 960px;
+    margin: 40px auto;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.card {
+    background-color: antiquewhite;
+    padding: 20px;
+    box-shadow: 10px 5px 5px rgba(0,0,0,0.2);
+    display: flex;
+    gap: 10px;
+}
+
+.card-img img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main p {
+    margin: 0;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+}

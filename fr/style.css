@@ -3,46 +3,39 @@
 }
 
 body {
-    margin: 0;
-    background-image: url(https://img.freepik.com/premium-vector/abstract-white-and-grey-background_528453-7.jpg);
-    background-size: 100px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 a {
-    color: inherit;
+    color: white;
     text-decoration: none;
 }
 
-
 .wrapper {
-    max-width: 900px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.color {
+    background-color: rgb(255, 233, 192);
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-header,
-article a {
-    background-color: rgba(145, 222, 30, 0.789);
-}
-
-article a {
-    color: white;
     padding: 20px;
 }
 
-article nav {
-    display: flex;
-    justify-content: right;
+header,
+footer {
+    background-color: pink;
 }
 
 header img {
-    height: 70px;
+    height: 40px;
 }
 
 header ul {
@@ -57,26 +50,41 @@ header ul li:not(:last-child) {
 }
 
 header ul li {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
+
 main {
-    background-color: white;
     display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
 }
 
 article img {
-    float: left;
-    margin: 0 20px 20px 0;
-    width: 150px;
+    float: right;
+    margin: 0 5px 5px 0;
+    width: 300px;
 }
 
 article:nth-child(odd) {
     margin-right: 20px;
 }
 
+article li {
+    text-decoration: none;
+}
+
+div {
+    display: flex;
+    gap: 10px;
+}
+
+div img {
+    border-radius: 100%;
+    width: 100px;
+}
+
 footer {
+    padding: 20px;
     text-align: center;
-    color: black;
-    padding: 10px;
 }
