@@ -1,32 +1,38 @@
 * {
-    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 body {
-    margin: 0 auto;
-    text-align: left;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-.wrapper {
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.color {
-    background-color: rgb(255, 233, 192);
+    background-color: rgb(218, 248, 248);
 }
 
 header {
+    justify-content: space-between;
+}
+
+header img {
+    width: 8%;
+    height: 6%;
+    align-self: center;
+    
+}
+
+.wrapper:not(header .wrapper) {
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header .wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    width: 900px;
+    margin: 0 auto;
 }
 
 header,
@@ -34,57 +40,78 @@ footer {
     background-color: pink;
 }
 
-header img {
-    height: 40px;
+header nav ul {
+    display: flex;
+    
 }
 
-header ul {
-    display: flex;
+header nav ul li {
     list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-header ul li:not(:last-child) {
-    margin-right: 30px;
-}
-
-header ul li {
-    margin-left: 20px;
+    padding: 20px;
 }
 
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: space-evenly;
-}
-
-article img {
-    float: right;
-    margin: 0 5px 5px 0;
-    width: 300px;
-}
-
-article:nth-child(odd) {
-    margin-right: 20px;
-}
-
-article li {
+a {
+    color: white;
     text-decoration: none;
 }
 
-div {
-    display: flex;
-    gap: 10px;
+ main article div img {
+    width: 40%;
+    float: right;
 }
 
-div img {
-    border-radius: 100%;
-    width: 100px;
+main div div ul {
+    border: 1px solid rgb(86, 71, 71);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+}
+
+main div ul li {
+    list-style: none;
+    border-bottom: 2px solid black;
+    padding: 5px;
+}
+
+.border {
+    border-top: 2px solid darkgray;
+    border-bottom: 2px solid black;;
+}
+
+.list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.color {
+    background-color: rgb(255, 233, 192);
+}
+
+.stock-art img {
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 125px;
+    height: 120px;
+}
+
+.stock-art {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.color {
+    background-color: rgb(255, 233, 192);
 }
 
 footer {
     padding: 20px;
     text-align: center;
+    margin: 0 auto;
 }
