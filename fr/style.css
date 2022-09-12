@@ -68,6 +68,7 @@ main div div ul {
     flex-direction: column;
     width: 100%;
     padding: 30px;
+    margin-right: 10px;
 }
 
 main div ul li {
