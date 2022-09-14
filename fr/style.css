@@ -1,118 +1,150 @@
 * {
-    font-family: sans-serif;
-}
-
-html {
-    max-width: 100%;
-    max-height: 100%;
+    box-sizing: border-box
 }
 
 body {
-    background-color: rgb(218, 248, 248);
+    margin: 0;
+    font-family: sans-serif;
 }
-
-header {
-    justify-content: space-between;
-}
-
-header img {
-    width: 8%;
-    height: 6%;
-    align-self: center;
-    
-}
-
-.wrapper:not(header .wrapper) {
-    width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header .wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 900px;
-    margin: 0 auto;
-}
-
-header,
-footer {
-    background-color: pink;
-}
-
-header nav ul {
-    display: flex;
-    
-}
-
-header nav ul li {
-    list-style: none;
-    padding: 20px;
-}
-
 
 a {
-    color: white;
+    color: inherit;
     text-decoration: none;
 }
 
- main article div img {
-    width: 40%;
-    float: right;
+header  {
+    background-color: brown;
+    color: white;
 }
 
-main div div ul {
-    border: 1px solid rgb(86, 71, 71);
-    border-radius: 20px;
+header img {
+    height: 70px;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li:last-child a {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 15px 5px;
+}
+
+.hero {
+    background-image: url("https://alynas.lt/wp-content/uploads/2020/03/Alynas-produktai.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 200px;
+    height: 40vh;
+}
+
+h1 {
+    background-color: rgba(165, 42, 42, .7);
+}
+
+
+.input-layout {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding: 30px;
-    margin-right: 10px;
+    float: left;
+    width: 500px;
+    gap: 10px;
+    flex: 1;
 }
 
-main div ul li {
-    list-style: none;
-    border-bottom: 2px solid black;
-    padding: 5px;
+textarea {
+    height: 50px;
+    resize: vertical;
 }
 
-.border {
-    border-top: 2px solid darkgray;
-    border-bottom: 2px solid black;;
-}
-
-.list {
+.button {
+    border: 1px solid red;
+    background-color: white;
+    color: gray;
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    width: 100%;
+    justify-content: center;
+    padding: 10px 20px;
+    width: 30%;
 }
 
-.color {
-    background-color: rgb(255, 233, 192);
-}
-
-.stock-art img {
-    border-radius: 50%;
-    border: 1px solid black;
-    width: 125px;
-    height: 120px;
-}
-
-.stock-art {
+.products {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+}
+
+.product-card {
+    background: rgb(185, 82, 82);
+    color: white;
+    width: calc(25% - 3px);
+}
+
+.product-card:not(:nth-child(4n)) {
+    margin-right: 4px;
+}
+
+.product-card {
+    margin-top: 4px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: scale-down;
+}
+
+.product-card h2 {
+    text-align: center;
+}
+
+.product-card p {
+    padding-left: 10px;
+}
+
+
+.container {
+    display: flex;
     justify-content: space-between;
 }
 
-.color {
-    background-color: rgb(255, 233, 192);
+iframe {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border: none;
+    flex: 1;
 }
 
-footer {
-    padding: 20px;
+span {
+    color: rgba(165, 42, 42, .7);
+}
+
+.background {
+    background-color: rgba(165, 42, 42, .7);
+    color: white;
+    margin-top: 0 auto;
     text-align: center;
-    margin: 0 auto;
+    padding: 10px 0;
 }
