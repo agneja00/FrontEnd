@@ -1,0 +1,21 @@
+@import 'footer.scss';
+
+$padding-medium: 20px;
+$padding-large: 40px;
+
+body {
+    margin: 0 auto;
+}
+
+.entry {
+    border: 1px solid black;
+    padding: $padding-large;
+
+    &_paragraph {
+        font-size: 20px;
+    }
+
+    &--modification {
+        border: 2px solid red;
+    }
+}
